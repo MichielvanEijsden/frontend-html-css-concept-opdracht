@@ -70,6 +70,9 @@ button{
     border-radius: 37px;
     color: var(--bg-lg-color);
 }
+a, a:visited a:link{
+    color: var(--purple-text-color);
+}
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
