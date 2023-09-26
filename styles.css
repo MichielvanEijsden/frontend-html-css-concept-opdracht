@@ -1,0 +1,46 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+:root{
+    --purple-text-color: #5722CD;
+    --bg--blue-color: #4845E4;
+    --pink-button-color: #ED4385;
+    --black-text-color: #0C0C0C;
+    --bg-lg-color: #F3F6F9; /*(voor de achtergrond van de projecten)*/
+    --bg--words-color: #F2F0FF; /*(voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:*/
+    --gray-text-color: #7A7A7A; /*(voor de service-tegel tekst)*/
+}
+/* ------------------------------- 2. Typography ----------------------------------- */
+/*font-family: 'Merriweather', serif;*/
+/*font-family: 'Roboto', sans-serif;*/
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+/* --------------- 4.2 Introduction ------------------- */
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
