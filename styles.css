@@ -91,7 +91,7 @@ button{
 }
 
 .header{
-    background-color: var(--bg-blue-color);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 43%, rgba(0,212,255,1) 100%);
     color: var(--bg-lg-color);
     text-align: center;
 }
@@ -103,5 +103,7 @@ header h1{
 height: 4rem;
 }
 /* --------------- 4.2 Introduction ------------------- */
-
+#intro{
+    color: var(--purple-text-color);
+}
 /* ------------------------------- 5. Media Queries -------------------------------- */
