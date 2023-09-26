@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -13,20 +14,25 @@
 ////////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
 *{
     padding: 0;
     margin: 0;
-    /*display: flex;*/
+    box-sizing: border-box;
+
 }
 :root{
     --purple-text-color: #5722CD;
-    --bg--blue-color: #4845E4;
+    --bg-blue-color: #4845E4;
     --pink-button-color: #ED4385;
     --black-text-color: #0C0C0C;
     --bg-lg-color: #F3F6F9; /*(voor de achtergrond van de projecten)*/
     --bg--words-color: #F2F0FF; /*(voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:*/
     --gray-text-color: #7A7A7A; /*(voor de service-tegel tekst)*/
+}
+body{
+    display: flex;
+    flex-direction:column;
+    width: 100vw;
 }
 /* ------------------------------- 2. Typography ----------------------------------- */
 /*font-family: 'Merriweather', serif;*/
@@ -34,33 +40,62 @@
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
-.innerbox{
+.outer-container{
+    border: 2px solid purple;
+    display: flex;
+    justify-content: center;
+}
+.inner-container{
+    border: 2px solid green;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+       align-items: center;
+    flex-basis: 1200px;
+    margin: 0 20px;
+}
+.inner-container-small{
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 20px;
 
 }
-.innerbox-small{
-
+button{
+    background-color: var(--pink-button-color);
 }
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
-nav{
+
+.nav-bar{
+    width: 100%;
     border: 2px dotted red;
     display: flex;
     justify-content: flex-end;
     padding: 20px;
 }
-.nav-bar{
-    border: 2px dotted green;
+#nav-bar{
     display: flex;
-    list-style: none;
     justify-content: space-between;
-    width: 300px;
+    list-style: none;
+    width: 20rem;
+}
 
+.header{
+    background-color: var(--bg-blue-color);
+    color: var(--bg-lg-color);
+    text-align: center;
+}
+header h1{
+    padding: 30px 0;
+}
+
+.header-image{
+height: 4rem;
 }
 /* --------------- 4.2 Introduction ------------------- */
 
