@@ -17,7 +17,7 @@
 *{
     padding: 0;
     margin: 0;
-    display: flex;
+    /*display: flex;*/
 }
 :root{
     --purple-text-color: #5722CD;
@@ -34,13 +34,34 @@
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
+.innerbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
+.innerbox-small{
+
+}
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+nav{
+    border: 2px dotted red;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.nav-bar{
+    border: 2px dotted green;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 300px;
 
+}
 /* --------------- 4.2 Introduction ------------------- */
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
