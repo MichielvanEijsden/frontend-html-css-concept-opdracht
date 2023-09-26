@@ -26,7 +26,7 @@
     --pink-button-color: #ED4385;
     --black-text-color: #0C0C0C;
     --bg-lg-color: #F3F6F9; /*(voor de achtergrond van de projecten)*/
-    --bg--words-color: #F2F0FF; /*(voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:*/
+    --bg-words-color: #F2F0FF; /*(voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:*/
     --gray-text-color: #7A7A7A; /*(voor de service-tegel tekst)*/
 }
 body{
@@ -64,6 +64,11 @@ body{
 }
 button{
     background-color: var(--pink-button-color);
+    margin: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 37px;
+    color: var(--bg-lg-color);
 }
 /* --------------- 3.2 Other --------------------------- */
 
