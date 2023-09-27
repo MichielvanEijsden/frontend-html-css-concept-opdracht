@@ -198,11 +198,9 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*flex-basis: 40vh;*/
-    width: 350px;
-    height: 350px;
+    flex-basis: 350px;
     margin: 20px;
-    padding: 40px;
+    padding: 30px;
     color: var(--gray-text-color);
     font-size: 15px;
 }
@@ -210,7 +208,32 @@ h3{
     width: 50px;
     height: auto;
 }
-/* --------------- 4.5 Footer ---------------------------- */
+/* --------------- 4.5 Contact ---------------------------- */
+.contact{
+    background: linear-gradient(140deg, rgba(72, 69, 228, 1) 53%, rgba(87, 34, 205, 1) 96%);
+    color: var(--bg-lg-color);
+}
+#contact {
+    width: 100%;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+#form-button{
+    display: flex;
+    justify-content: center;
+}
+input, textarea{
+    padding: 10px;
+}
+form button{
+    font-weight: 700;
+    flex-basis: 150px;
+    padding: 20px;
+}
+/* --------------- 4.6 Footer ---------------------------- */
 footer{
     display: flex;
     justify-content: center;
