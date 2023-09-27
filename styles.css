@@ -62,7 +62,7 @@ body{
     margin: 20px;
 
 }
-button{
+button {
     background-color: var(--pink-button-color);
     margin: 20px;
     padding: 10px 20px;
@@ -70,6 +70,7 @@ button{
     border-radius: 37px;
     color: var(--bg-lg-color);
     text-transform: uppercase;
+    box-shadow: 0 8px 10px #5722CD;
 }
 a, a:visited a:link{
     color: var(--purple-text-color);
@@ -95,7 +96,7 @@ a, a:visited a:link{
 }
 
 .header{
-    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 43%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(140deg, rgba(72,69,228,1) 53%, rgba(74,8,155,1) 96%);
     color: var(--bg-lg-color);
     text-align: center;
 }
