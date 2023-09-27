@@ -144,6 +144,7 @@ img {
     background-color: var(--bg-lg-color);
 }
 .work{
+    border: 2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -249,3 +250,7 @@ footer{
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+@media screen and(max-width: 576px){
+
+
+}
