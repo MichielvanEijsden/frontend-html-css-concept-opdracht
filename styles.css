@@ -69,6 +69,7 @@ button{
     border: none;
     border-radius: 37px;
     color: var(--bg-lg-color);
+    text-transform: uppercase;
 }
 a, a:visited a:link{
     color: var(--purple-text-color);
