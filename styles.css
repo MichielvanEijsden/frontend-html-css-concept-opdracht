@@ -186,8 +186,26 @@ margin: 20px 0;
     padding: 50px 0;
 }
 /* --------------- 4.4 Service ---------------------------- */
-
-
+.service-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+h3{
+    color: var(--purple-text-color);
+}
+.service{
+    border: 2px solid var(--purple-text-color);
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30vh;
+    margin: 40px;
+}
+.service-icon{
+    width: 50px;
+    height: auto;
+}
 /* --------------- 4.5 Footer ---------------------------- */
 footer{
     display: flex;
