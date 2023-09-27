@@ -92,7 +92,6 @@ img {
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
-header {
     .nav-bar {
         width: 100%;
         border: 2px dotted red;
@@ -135,9 +134,8 @@ header {
         height: 4rem;
         bottom: 0;
     }
-}
+
 /* --------------- 4.2 Introduction ------------------- */
- intro {
      #intro {
          color: var(--purple-text-color);
          text-align: center;
@@ -154,7 +152,7 @@ header {
      #small-text {
          font-size: 12px;
      }
- }
+
 /* --------------- 4.3 Work ---------------------------- */
 .work-wrapper{
     background-color: var(--bg-lg-color);
@@ -193,6 +191,12 @@ margin: 20px 0;
 
 .work-3{
     flex-direction: row-reverse;
+}
+.view-project-link{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 50px 0;
 }
 /* --------------- 4.4 Service ---------------------------- */
 
