@@ -91,52 +91,63 @@ img {
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+minimize {
+    .nav-bar {
+        width: 100%;
+        border: 2px dotted red;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 20px;
 
-.nav-bar{
-    width: 100%;
-    border: 2px dotted red;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 20px;
+    }
 
-}
-#nav-bar{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    width: 30rem;
-}
+    #nav-bar {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        width: 30rem;
+    }
 
-.header{
-    background: linear-gradient(140deg, rgba(72,69,228,1) 53%, rgba(74,8,155,1) 96%);
-    color: var(--bg-lg-color);
-    text-align: center;
-    margin-bottom: 50px;
-    position: relative;
-}
-.header-text{
-    margin-bottom: 100px;
-}
-header h1{
-    padding: 40px 0;
-}
+    .header {
+        background: linear-gradient(140deg, rgba(72, 69, 228, 1) 53%, rgba(74, 8, 155, 1) 96%);
+        color: var(--bg-lg-color);
+        text-align: center;
+        margin-bottom: 50px;
+        position: relative;
+    }
 
-.header-image{
-    position: absolute;
-    height: 4rem;
-    bottom: 0;
+    .header-text {
+        margin-bottom: 100px;
+    }
+
+    header h1 {
+        padding: 40px 0;
+    }
+
+    .header-image {
+        position: absolute;
+        height: 4rem;
+        bottom: 0;
+    }
 }
 /* --------------- 4.2 Introduction ------------------- */
-#intro{
-    color: var(--purple-text-color);
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.25rem;
-    margin-bottom: 50px;
+minimize {
+    #intro {
+        color: var(--purple-text-color);
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.25rem;
+        margin-bottom: 50px;
     }
-#intro p {
-    padding: 10px;
 
+    #intro p {
+        padding: 10px;
+
+    }
+
+    #small-text {
+        font-size: 12px;
+    }
 }
 /* --------------- 4.3 Work ---------------------------- */
 .work{
