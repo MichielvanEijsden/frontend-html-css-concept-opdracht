@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400;500;700&display=swap');
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -33,10 +33,16 @@ body{
     display: flex;
     flex-direction:column;
     width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
 }
 /* ------------------------------- 2. Typography ----------------------------------- */
 /*font-family: 'Merriweather', serif;*/
 /*font-family: 'Roboto', sans-serif;*/
+h1,h2,h3,#intro{
+    font-family: 'Merriweather', serif;
+    }
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
@@ -50,8 +56,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 1200px;
+    flex-basis: 1400px;
     margin: 40px 40px;
+
 }
 .inner-container-small{
     border: 2px solid yellow;
@@ -59,7 +66,7 @@ body{
     flex-direction: column;
     align-items: center;
     width: 600px;
-    margin: 20px;
+    margin: 40px;
 
 }
 button {
@@ -80,6 +87,8 @@ a, a:visited a:link{
 img {
     width: 100%;
 }
+
+
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
@@ -89,47 +98,64 @@ img {
     border: 2px dotted red;
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
+    padding: 0 20px;
+
 }
 #nav-bar{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 20rem;
+    width: 30rem;
 }
 
 .header{
     background: linear-gradient(140deg, rgba(72,69,228,1) 53%, rgba(74,8,155,1) 96%);
     color: var(--bg-lg-color);
     text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+.header-text{
+    margin-bottom: 100px;
 }
 header h1{
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
 .header-image{
-height: 4rem;
+    position: absolute;
+    height: 4rem;
+    bottom: 0;
 }
 /* --------------- 4.2 Introduction ------------------- */
 #intro{
     color: var(--purple-text-color);
-}
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 50px;
+    }
+#intro p {
+    padding: 10px;
 
+}
 /* --------------- 4.3 Work ---------------------------- */
 .work{
     border: 2px solid yellowgreen;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 .work-image{
     border: 2px solid blue;
-    flex-basis: 800px;
+    flex-basis: 500px;
     flex-grow: 0;
     flex-shrink: 1;
 }
 .work-text{
     border: 2px solid crimson;
-    /*flex-basis: 400px;*/
+    flex-basis: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
