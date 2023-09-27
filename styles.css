@@ -86,12 +86,13 @@ a, a:visited a:link{
 }
 img {
     width: 100%;
+    height: auto;
 }
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
-/*minimize {*/
+header {
     .nav-bar {
         width: 100%;
         border: 2px dotted red;
@@ -112,8 +113,9 @@ img {
         color: var(--bg-lg-color);
         text-decoration: none;
     }
+
     .header {
-        background: linear-gradient(140deg, rgba(72,69,228,1) 53%, rgba(87,34,205,1) 96%);
+        background: linear-gradient(140deg, rgba(72, 69, 228, 1) 53%, rgba(87, 34, 205, 1) 96%);
         color: var(--bg-lg-color);
         text-align: center;
         margin-bottom: 50px;
@@ -135,30 +137,30 @@ img {
     }
 }
 /* --------------- 4.2 Introduction ------------------- */
-minimize {
-    #intro {
-        color: var(--purple-text-color);
-        text-align: center;
-        font-weight: 700;
-        font-size: 1.25rem;
-        margin-bottom: 50px;
-    }
+ intro {
+     #intro {
+         color: var(--purple-text-color);
+         text-align: center;
+         font-weight: 700;
+         font-size: 1.25rem;
+         margin-bottom: 50px;
+     }
 
-    #intro p {
-        padding: 10px;
+     #intro p {
+         padding: 10px;
 
-    }
+     }
 
-    #small-text {
-        font-size: 12px;
-    }
-}
+     #small-text {
+         font-size: 12px;
+     }
+ }
 /* --------------- 4.3 Work ---------------------------- */
 .work-wrapper{
     background-color: var(--bg-lg-color);
 }
 .work{
-    border: 2px solid yellowgreen;
+    border: 2px solid red;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -169,6 +171,7 @@ minimize {
     flex-basis: 800px;
     flex-grow: 0;
     flex-shrink: 1;
+    box-shadow: 0  10px 5px grey;
 }
 .work-text{
     border: 2px solid crimson;
@@ -176,7 +179,10 @@ minimize {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+}
+.squiggle{
+margin: 20px 0;
 }
 .work-1{
     flex-direction: row-reverse;
