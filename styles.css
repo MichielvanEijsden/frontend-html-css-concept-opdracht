@@ -148,7 +148,7 @@ img {
     justify-content: space-between;
     align-items: center;
     margin:20px 0;
-}
+    }
 .work-image{
     font-size: 0; /* to remove white line under picture */
     flex-basis: 800px;
@@ -202,6 +202,7 @@ h3{
     padding: 30px;
     color: var(--gray-text-color);
     font-size: 15px;
+    box-shadow: 0  5px 10px grey;
 }
 .service-icon{
     width: 50px;
