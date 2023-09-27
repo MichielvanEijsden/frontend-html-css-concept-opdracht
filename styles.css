@@ -47,7 +47,6 @@ h1,h2,h3,#intro{
 
 /* --------------- 3.1 Reusables ----------------------- */
 .outer-container{
-    /*border: 2px solid purple;*/
     display: flex;
     justify-content: center;
 }
@@ -65,7 +64,7 @@ h1,h2,h3,#intro{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 600px;
+    width: 800px;
     margin: 40px;
 
 }
@@ -100,19 +99,16 @@ img {
         padding: 0 20px;
 
     }
-
     #nav-bar {
         display: flex;
         justify-content: space-between;
         list-style: none;
         width: 30rem;
     }
-
     #nav-bar-link {
         color: var(--bg-lg-color);
         text-decoration: none;
     }
-
     .header {
         background: linear-gradient(140deg, rgba(72, 69, 228, 1) 53%, rgba(87, 34, 205, 1) 96%);
         color: var(--bg-lg-color);
@@ -120,15 +116,12 @@ img {
         margin-bottom: 50px;
         position: relative;
     }
-
     .header-text {
         margin-bottom: 100px;
     }
-
     header h1 {
         padding: 40px 0;
     }
-
     .header-image {
         position: absolute;
         height: 4rem;
@@ -143,12 +136,10 @@ img {
          font-size: 1.25rem;
          margin-bottom: 50px;
      }
-
      #intro p {
          padding: 10px;
 
      }
-
      #small-text {
          font-size: 12px;
      }
@@ -158,21 +149,18 @@ img {
     background-color: var(--bg-lg-color);
 }
 .work{
-    border: 2px solid red;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin:20px 0;
 }
 .work-image{
-    border: 2px solid blue;
     flex-basis: 800px;
     flex-grow: 0;
     flex-shrink: 1;
     box-shadow: 0  10px 5px grey;
 }
 .work-text{
-    border: 2px solid crimson;
     flex-basis: 400px;
     display: flex;
     flex-direction: column;
@@ -188,7 +176,6 @@ margin: 20px 0;
 .work-2{
 
 }
-
 .work-3{
     flex-direction: row-reverse;
 }
