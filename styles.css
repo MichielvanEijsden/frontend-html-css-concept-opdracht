@@ -51,7 +51,7 @@ body{
     flex-direction: column;
     align-items: center;
     flex-basis: 1200px;
-    margin: 0 20px;
+    margin: 40px 40px;
 }
 .inner-container-small{
     border: 2px solid yellow;
@@ -72,11 +72,14 @@ button {
     text-transform: uppercase;
     box-shadow: 0 8px 10px #5722CD;
 }
+
+/* --------------- 3.2 Other --------------------------- */
 a, a:visited a:link{
     color: var(--purple-text-color);
 }
-/* --------------- 3.2 Other --------------------------- */
-
+img {
+    width: 100%;
+}
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
@@ -110,5 +113,36 @@ height: 4rem;
 /* --------------- 4.2 Introduction ------------------- */
 #intro{
     color: var(--purple-text-color);
+}
+
+/* --------------- 4.3 Work ---------------------------- */
+.work{
+    border: 2px solid yellowgreen;
+    display: flex;
+    justify-content: space-between;
+}
+.work-image{
+    border: 2px solid blue;
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+.work-text{
+    border: 2px solid crimson;
+    /*flex-basis: 400px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.work-1{
+    flex-direction: row-reverse;
+}
+.work-2{
+
+}
+
+.work-3{
+    flex-direction: row-reverse;
 }
 /* ------------------------------- 5. Media Queries -------------------------------- */
