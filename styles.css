@@ -100,7 +100,7 @@ img {
         list-style: none;
         width: 30rem;
     }
-    #nav-bar-link {
+    .nav-bar-link {
         color: var(--bg-lg-color);
         text-decoration: none;
     }
