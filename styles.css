@@ -23,11 +23,11 @@
 }
 
 :root {
-    --purple-text-color: #5722CD;
-    --bg-blue-color: #4845E4;
-    --pink-button-color: #ED4385;
-    --black-text-color: #0C0C0C;
-    --bg-lg-color: #F3F6F9; /*(voor de achtergrond van de projecten)*/
+    --purple-color: #5722CD;
+    --blue-color: #4845E4;
+    --pink-color: #ED4385;
+    --black-color: #0C0C0C;
+    --lightgrey-color: #F3F6F9; /*(voor de achtergrond van de projecten)*/
     --bg-words-color: #F2F0FF; /*(voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:*/
     --gray-text-color: #7A7A7A; /*(voor de service-tegel tekst)*/
 }
@@ -74,19 +74,19 @@ h1, h2, h3, #intro {
 }
 
 button {
-    background-color: var(--pink-button-color);
+    background-color: var(--pink-color);
     margin: 20px;
     padding: 10px 20px;
     border: none;
     border-radius: 37px;
-    color: var(--bg-lg-color);
+    color: var(--lightgrey-color);
     text-transform: uppercase;
     box-shadow: 0 8px 10px #5722CD;
 }
 
 /* --------------- 3.2 Other --------------------------- */
 a, a:visited a:link {
-    color: var(--purple-text-color);
+    color: var(--purple-color);
 }
 
 img {
@@ -112,13 +112,13 @@ img {
 }
 
 .nav-bar-link {
-    color: var(--bg-lg-color);
+    color: var(--lightgrey-color);
     text-decoration: none;
 }
 
 .header {
     background: linear-gradient(140deg, rgba(72, 69, 228, 1) 53%, rgba(87, 34, 205, 1) 96%);
-    color: var(--bg-lg-color);
+    color: var(--lightgrey-color);
     text-align: center;
     margin-bottom: 50px;
     position: relative;
@@ -140,7 +140,7 @@ header h1 {
 
 /* --------------- 4.2 Introduction ------------------- */
 #intro {
-    color: var(--purple-text-color);
+    color: var(--purple-color);
     text-align: center;
     font-weight: 700;
     font-size: 1.25rem;
@@ -158,7 +158,7 @@ header h1 {
 
 /* --------------- 4.3 Work ---------------------------- */
 .work-wrapper {
-    background-color: var(--bg-lg-color);
+    background-color: var(--lightgrey-color);
 }
 
 .work {
@@ -216,12 +216,12 @@ header h1 {
 }
 
 h3 {
-    color: var(--purple-text-color);
+    color: var(--purple-color);
     padding: 10px 0;
 }
 
 .service {
-    border: 2px solid var(--purple-text-color);
+    border: 2px solid var(--purple-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -241,7 +241,7 @@ h3 {
 /* --------------- 4.5 Contact ---------------------------- */
 .contact {
     background: linear-gradient(140deg, rgba(72, 69, 228, 1) 53%, rgba(87, 34, 205, 1) 96%);
-    color: var(--bg-lg-color);
+    color: var(--lightgrey-color);
 }
 
 .contact h2 {
@@ -280,8 +280,8 @@ form button {
 footer {
     display: flex;
     justify-content: center;
-    background-color: var(--black-text-color);
-    color: var(--bg-lg-color);
+    background-color: var(--black-color);
+    color: var(--lightgrey-color);
     padding: 15px;
     font-size: 15px;
 }
