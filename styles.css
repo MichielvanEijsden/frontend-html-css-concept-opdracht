@@ -91,7 +91,7 @@ img {
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
-minimize {
+/*minimize {*/
     .nav-bar {
         width: 100%;
         border: 2px dotted red;
@@ -108,8 +108,12 @@ minimize {
         width: 30rem;
     }
 
+    #nav-bar-link {
+        color: var(--bg-lg-color);
+        text-decoration: none;
+    }
     .header {
-        background: linear-gradient(140deg, rgba(72, 69, 228, 1) 53%, rgba(74, 8, 155, 1) 96%);
+        background: linear-gradient(140deg, rgba(72,69,228,1) 53%, rgba(87,34,205,1) 96%);
         color: var(--bg-lg-color);
         text-align: center;
         margin-bottom: 50px;
@@ -156,7 +160,7 @@ minimize {
 .work{
     border: 2px solid yellowgreen;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin:20px 0;
 }
