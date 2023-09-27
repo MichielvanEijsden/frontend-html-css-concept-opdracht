@@ -150,11 +150,12 @@ img {
 }
 .work{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin:20px 0;
 }
 .work-image{
+    font-size: 0; /* to remove white line under picture */
     flex-basis: 800px;
     flex-grow: 0;
     flex-shrink: 1;
