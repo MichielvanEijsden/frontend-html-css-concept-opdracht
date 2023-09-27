@@ -161,14 +161,14 @@ header h1 {
     background-color: var(--lightgrey-color);
 }
 
-.work {
+.case-studies {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
 }
 
-.work-image {
+.case-studies-image {
     font-size: 0; /* to remove white line under picture */
     flex-basis: 800px;
     flex-grow: 0;
@@ -176,7 +176,7 @@ header h1 {
     box-shadow: 0 10px 5px grey;
 }
 
-.work-text {
+.case-studies-text {
     flex-basis: 400px;
     display: flex;
     flex-direction: column;
@@ -188,15 +188,15 @@ header h1 {
     margin: 20px 0;
 }
 
-.work-1 {
+.case-studies-1 {
     flex-direction: row-reverse;
 }
 
-.work-2 {
+.case-studies-2 {
 
 }
 
-.work-3 {
+.case-studies-3 {
     flex-direction: row-reverse;
 }
 
