@@ -54,6 +54,7 @@ h1, h2, h3, #intro {
 .outer-container {
     display: flex;
     justify-content: center;
+    padding: 8rem 0;
 }
 
 .inner-container {
@@ -118,32 +119,24 @@ img {
 header{
     background: linear-gradient(140deg, rgba(72, 69, 228, 1) 53%, rgba(87, 34, 205, 1) 96%);
     position: relative;
-    padding-bottom: 3rem;
-
-
-
 }
 header::after{
     content: "";
     position: absolute;
-    border-top: 100px solid transparent;
+    border-top: 70px solid transparent;
     border-left: 100vw solid white;
     border-bottom: 0 solid transparent;
-
-
     bottom: 0;
     left: 0;
-
 }
 .header {
     color: var(--lightgrey-color);
     text-align: center;
     margin-bottom: 50px;
-    position: relative;
 }
 
 .header-text {
-    padding: 100px 0 ;
+    padding: 50px 0 ;
 }
 
 header h1 {
@@ -153,7 +146,7 @@ header h1 {
 .header-image {
     position: absolute;
     height: 4rem;
-    bottom: 0;
+    bottom: 70px;
 }
 
 
@@ -166,24 +159,30 @@ header h1 {
     font-size: 1.25rem;
     margin-bottom: 50px;
     background-clip: padding-box;
+
 }
 
 #intro p {
     padding: 10px;
 
 }
-/*.intro::after{*/
-/*        content: "";*/
-/*        position: absolute;*/
-/*        border-top: 100px solid transparent;*/
-/*        border-left: 100vw solid white;*/
-/*        border-bottom: 0 solid transparent;*/
-/*        bottom: 17vh;*/
-/*        left: 0;*/
-/*}*/
+.intro::after{
+    content: "";
+    position: absolute;
+    border-top: 80px solid transparent;
+    border-left: 100vw solid var(--lightgrey-color);
+    border-bottom: 0 solid transparent;
+    bottom: 0;
+    left: 0;
+}
+
 
 #small-text {
     font-size: 12px;
+}
+.extra-padding{
+    position: relative;
+/*    padding: 4rem 0 8rem 0;*/
 }
 
 /* --------------- 4.3 Work ---------------------------- */
