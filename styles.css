@@ -68,7 +68,7 @@ h1, h2, h3, #intro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 800px;
+    flex-basis: 800px;
     margin: 40px;
     flex-wrap: wrap;
 }
@@ -138,21 +138,7 @@ header h1 {
     bottom: 0;
 }
 
-.header::before {
 
-    content: "";
-    display: block;
-    /*width:100vw;*/
-    /*height: 20px;*/
-    border-left: 0 solid transparent;
-    border-top: 0 solid transparent;
-    border-right: 100vw solid #5722CD;
-    border-bottom: 100px solid transparent;
-    /*border-image: linear-gradient(140deg, rgba(72, 69, 228, 1) 53%, rgba(87, 34, 205, 1) 96%);*/
-    position: absolute;
-    left: 0;
-    top: 100%;
-}
 
 /* --------------- 4.2 Introduction ------------------- */
 #intro {
@@ -163,19 +149,7 @@ header h1 {
     margin-bottom: 50px;
     background-clip: padding-box;
 }
-/*#intro{*/
-/*    position: relative;*/
-/*}*/
-/*#intro::after{*/
-/*    content: "Hello";*/
-/*    display: block;*/
-/*    !*color: var(--lightgrey-color);*!*/
-/*    color: red;*/
-/*    font-size: 380px;*/
-/*    position: absolute;*/
-/*    right: -500px;*/
-/*    bottom: -100px;*/
-/*}*/
+
 #intro p {
     padding: 10px;
 
@@ -321,12 +295,12 @@ footer {
         justify-content: center;
     }
 
-    .work {
+    .case-studies {
         flex-direction: column;
         margin: 20px 0;
     }
 
-    .work-image {
+    .case-studies-image {
         flex-basis: auto;
     }
 
