@@ -19,7 +19,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 :root {
@@ -54,7 +53,7 @@ h1, h2, h3, #intro {
 .outer-container {
     display: flex;
     justify-content: center;
-    padding: 8rem 0;
+    position: relative;
 }
 
 .inner-container {
@@ -116,11 +115,13 @@ img {
     color: var(--lightgrey-color);
     text-decoration: none;
 }
-header{
+
+header {
     background: linear-gradient(140deg, rgba(72, 69, 228, 1) 53%, rgba(87, 34, 205, 1) 96%);
     position: relative;
 }
-header::after{
+
+header::after {
     content: "";
     position: absolute;
     border-top: 70px solid transparent;
@@ -129,6 +130,7 @@ header::after{
     bottom: 0;
     left: 0;
 }
+
 .header {
     color: var(--lightgrey-color);
     text-align: center;
@@ -136,7 +138,7 @@ header::after{
 }
 
 .header-text {
-    padding: 50px 0 ;
+    padding: 50px 0;
 }
 
 header h1 {
@@ -146,47 +148,42 @@ header h1 {
 .header-image {
     position: absolute;
     height: 4rem;
-    bottom: 70px;
+    bottom: 20px;
 }
 
-
-
 /* --------------- 4.2 Introduction ------------------- */
-#intro {
+.intro {
     color: var(--purple-color);
     text-align: center;
     font-weight: 700;
     font-size: 1.25rem;
     margin-bottom: 50px;
-    background-clip: padding-box;
-
 }
 
-#intro p {
+.intro p {
     padding: 10px;
-
 }
-.intro::after{
+
+#intro-border {
+    padding: 8rem 0;
+}
+
+#intro-border::after {
     content: "";
     position: absolute;
-    border-top: 80px solid transparent;
+    border-top: 70px solid transparent;
     border-left: 100vw solid var(--lightgrey-color);
     border-bottom: 0 solid transparent;
     bottom: 0;
     left: 0;
 }
 
-
-#small-text {
+.small-text {
     font-size: 12px;
-}
-.extra-padding{
-    position: relative;
-/*    padding: 4rem 0 8rem 0;*/
 }
 
 /* --------------- 4.3 Work ---------------------------- */
-.work-wrapper {
+.case-studies-wrapper {
     background-color: var(--lightgrey-color);
 }
 
@@ -236,6 +233,20 @@ header h1 {
     padding: 50px 0;
 }
 
+#case-studies-border {
+    padding: 8rem 0;
+}
+
+#case-studies-border::after {
+    content: "";
+    position: absolute;
+    border-top: 70px solid transparent;
+    border-left: 100vw solid white;
+    border-bottom: 0 solid transparent;
+    bottom: 0;
+    left: 0;
+}
+
 /* --------------- 4.4 Service ---------------------------- */
 .service-wrapper {
     display: flex;
@@ -265,6 +276,10 @@ h3 {
 .service-icon {
     width: 50px;
     height: auto;
+}
+
+#service {
+    padding: 8rem 0;
 }
 
 /* --------------- 4.5 Contact ---------------------------- */
@@ -303,6 +318,20 @@ form button {
     font-weight: 700;
     flex-basis: 150px;
     padding: 20px;
+}
+
+#contact-border {
+    padding: 8rem 0;
+}
+
+#contact-border::after {
+    content: "";
+    position: absolute;
+    border-top: 0 solid transparent;
+    border-right: 100vw solid white;
+    border-bottom: 70px solid transparent;
+    top: 0;
+    left: 0;
 }
 
 /* --------------- 4.6 Footer ---------------------------- */

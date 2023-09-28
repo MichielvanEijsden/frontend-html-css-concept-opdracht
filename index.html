@@ -8,39 +8,39 @@
 </head>
 <body>
 <header>
-    <div class="outer-container header">
-    <div class="inner-container">
+    <div class="outer-container header ">
+        <div class="inner-container">
 
-        <nav class="nav-bar">
-            <ul id="nav-bar">
-                <li><a class="nav-bar-link" href="#case-studies">Case Studies</a></li>
-                <li><a class="nav-bar-link" href="#service">Services</a></li>
-                <li><a class="nav-bar-link" href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
+            <nav class="nav-bar">
+                <ul id="nav-bar">
+                    <li><a class="nav-bar-link" href="#case-studies">Case Studies</a></li>
+                    <li><a class="nav-bar-link" href="#service">Services</a></li>
+                    <li><a class="nav-bar-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
 
-        <div class="inner-container-small header-text">
+            <div class="inner-container-small header-text">
 
-            <h1>Your website is an investment in the success of your business.</h1>
+                <h1>Your website is an investment in the success of your business.</h1>
 
-            <p>We are here to help you succeed.</p>
+                <p>We are here to help you succeed.</p>
 
-            <button type="button">Let's work together</button>
+                <button type="button">Let's work together</button>
 
-        </div>
-        <span class="header-image">
+            </div>
+            <span class="header-image">
         <img src="assets/squiggle_line_stripe.svg" alt="squiggle line w/ stripe"/>
         </span>
+        </div>
     </div>
-</div>
 
 </header>
 <main>
 
-    <section class="outer-container extra-padding">
-        <div class="inner-container-small intro" >
+    <section class="outer-container">
+        <div class="inner-container-small" id="intro-border">
 
-            <div id="intro">
+            <div class="intro">
                 <p>Rekupe is a digital agency in Los Angeles.</p>
                 <p>We use strategic UX, SEO optimization and beautiful
                     visual
@@ -50,14 +50,14 @@
                     new digital experiences.</p>
             </div>
 
-            <p id="small-text">Have a question? <a href="#contact">Click here</a> to contact us!</p>
+            <p class="small-text">Have a question? <a href="#contact">Click here</a> to contact us!</p>
         </div>
         <div id="hello"></div>
     </section>
-    <section class="outer-container work-wrapper">
-        <div class="inner-container">
+    <section class="outer-container case-studies-wrapper">
+        <div class="inner-container" id="case-studies-border">
             <!--    work-->
-            <article class="case-studies case-studies-1">
+            <article class="case-studies case-studies-1" id="case-studies">
                 <span class="case-studies-image">
                     <img src="assets/work-image-01.jpeg" height="547" width="820" alt="Rolling Stones"/>
                 </span>
@@ -107,9 +107,9 @@
         </div>
     </section>
     <section class="outer-container">
-        <div class="inner-container">
+        <div class="inner-container" id="service">
             <div class="service-wrapper">
-                <article class="service" id="service">
+                <article class="service">
                     <!--    Service-->
                     <span class="service-icon">
                 <img src="assets/icon_web-design.svg" alt="Web Design"/>
@@ -201,12 +201,12 @@
         </div>
     </section>
     <section class="outer-container contact">
-        <div class="inner-container-small">
+        <div class="inner-container-small" id="contact-border">
             <!--    Form-->
             <h2>Let's work together</h2>
 
             <p>Have a question? Need a quote? Let us know!</p>
-            <form onsubmit="hier-hebben-we-JS-voor-nodig" id="contact">
+            <form onsubmit="" id="contact">
                 <div id="form">
                     <label for="name">Name</label>
                     <input name="name" id="name" type="text" placeholder="Name"/>
@@ -216,7 +216,7 @@
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                 </div>
                 <div id="form-button">
-                <button type="submit">send</button>
+                    <button type="submit">send</button>
                 </div>
             </form>
         </div>
