@@ -82,6 +82,7 @@ button {
     color: var(--lightgrey-color);
     text-transform: uppercase;
     box-shadow: 0 8px 10px #5722CD;
+    cursor: pointer;
 }
 
 /* --------------- 3.2 Other --------------------------- */
@@ -338,7 +339,7 @@ form button {
 }
 
 #contact-border {
-    padding: 8rem 0;
+    padding: 8rem 0 0 0;
 }
 
 #contact-border::after {
