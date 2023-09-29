@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
 
 /*////////////////////////
     Table of Contents
@@ -71,6 +71,7 @@ h1, h2, h3, #intro {
     max-width: 800px;
     margin: 40px;
     flex-wrap: wrap;
+    padding: 8rem 0;
 }
 
 button {
@@ -168,35 +169,27 @@ header h1 {
 .small-text {
     font-size: 12px;
 }
-#intro-border {
-    padding: 8rem 0;
-}
 
-#intro-border::after {
-    content: "";
-    position: absolute;
-    border-top: 70px solid transparent;
-    border-left: 100vw solid var(--lightgrey-color);
-    border-bottom: 0 solid transparent;
-    bottom: 0;
-    left: 0;
-}
 
-#hello:after{
+.intro:after{
     content: "hello";
     border: 2px solid green;
     position: absolute;
-    color: var(--lightgrey-color);
+    color: var(--bg-words-color);
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 375px;
+    font-size: 20vw;
     z-index: -1;
+    top: 0;
+    left:27.5%;
 }
-
 
 
 /* --------------- 4.3 Work ---------------------------- */
 .case-studies-wrapper {
     background-color: var(--lightgrey-color);
+    color: var(--black-color);
+    position: relative;
 }
 
 .case-studies {
@@ -269,10 +262,10 @@ header h1 {
 #case-studies-border::after {
     content: "";
     position: absolute;
-    border-top: 70px solid transparent;
-    border-left: 100vw solid white;
-    border-bottom: 0 solid transparent;
-    bottom: 0;
+    border-top: 0 solid transparent;
+    border-right: 100vw solid white;
+    border-bottom: 70px solid transparent;
+    top: 0;
     left: 0;
 }
 
@@ -309,6 +302,15 @@ h3 {
 
 #service {
     padding: 8rem 0;
+}
+#service::after {
+    content: "";
+    position: absolute;
+    border-top: 0 solid transparent;
+    border-right: 100vw solid var(--lightgrey-color);
+    border-bottom: 70px solid transparent;
+    top: 0;
+    left: 0;
 }
 
 /* --------------- 4.5 Contact ---------------------------- */
@@ -387,5 +389,7 @@ footer {
     .case-studies-image {
         flex-basis: auto;
     }
-
+    .intro:after{
+        top: 100px;
+    }
 }
