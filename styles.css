@@ -171,14 +171,13 @@ header h1 {
 .intro p {
     padding: 10px;
 }
+
 .small-text {
     font-size: 12px;
 }
 
-
-.intro:after{
+.intro:after {
     content: "hello";
-    border: 2px solid green;
     position: absolute;
     color: var(--bg-words-color);
     font-family: 'Roboto', sans-serif;
@@ -194,6 +193,7 @@ header h1 {
 .case-studies-wrapper {
     background-color: var(--lightgrey-color);
     color: var(--black-color);
+    z-index: -2;
     position: relative;
 }
 
@@ -261,7 +261,7 @@ header h1 {
 }
 
 #case-studies-border {
-    padding: 8rem 0;
+    padding: 16rem 0 8rem 0;
 }
 
 #case-studies-border::after {
@@ -274,13 +274,28 @@ header h1 {
     left: 0;
 }
 
+.case-studies-bg {
+    border: 2px solid hotpink;
+    position: relative;
+}
+
+.case-studies-wrapper::before {
+    content: "work";
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 550px;
+    z-index: -1;
+    top: -20px;
+}
+
 /* --------------- 4.4 Service ---------------------------- */
 .service-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: 2px solid purple;
     position: relative;
 }
 
@@ -310,6 +325,7 @@ h3 {
 #service {
     padding: 16rem 0 8rem 0;
 }
+
 #service::after {
     content: "";
     position: absolute;
@@ -319,9 +335,9 @@ h3 {
     top: 0;
     left: 0;
 }
-.service-wrapper::after{
+
+.service-wrapper::after {
     content: "services";
-    border: 2px solid green;
     position: absolute;
     color: var(--bg-words-color);
     font-family: 'Roboto', sans-serif;
@@ -407,13 +423,20 @@ footer {
     .case-studies-image {
         flex-basis: auto;
     }
-    .intro:after{
+
+    .intro:after {
         top: -90px;
         font-size: 150px;
     }
+
+    .case-studies-wrapper::before {
+        font-size: 200px;
+        top: 180px;
+    }
+
     .service-wrapper::after {
 
-        font-size:100px;
+        font-size: 100px;
         top: -70px;
     }
 }
