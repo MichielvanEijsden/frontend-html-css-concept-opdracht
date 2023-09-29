@@ -159,12 +159,15 @@ header h1 {
     font-weight: 700;
     font-size: 1.25rem;
     margin-bottom: 50px;
+    font-family: 'Merriweather', serif;
 }
 
 .intro p {
     padding: 10px;
 }
-
+.small-text {
+    font-size: 12px;
+}
 #intro-border {
     padding: 8rem 0;
 }
@@ -179,9 +182,17 @@ header h1 {
     left: 0;
 }
 
-.small-text {
-    font-size: 12px;
+#hello:after{
+    content: "hello";
+    border: 2px solid green;
+    position: absolute;
+    color: var(--lightgrey-color);
+    font-weight: 700;
+    font-size: 375px;
+    z-index: -1;
 }
+
+
 
 /* --------------- 4.3 Work ---------------------------- */
 .case-studies-wrapper {
